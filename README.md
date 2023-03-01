@@ -8,6 +8,8 @@
 
 Note: This was originally made by **Ryan Krumenacker**. I just updated and debugged the code so that it runs as of March 2023. When the Excel file is created, it will find the best arbitrage opportunities for whichever bookmaker. I have mine set to find opportunities from NBA games, but the sport and league can be changed as well. 
 
+**--------------------------------------------------------------------**
+
 This project was made in March 2022. In this project, I utilize the **Live Sports Odds API** (https://the-odds-api.com/) to find statistical arbitrage opportunities in upcoming sporting events across the world. For sports betting purposes, an arbitrage opportunity is when two books are offering such distinct odds that if a bettor makes a particular bet with one book and another particular bet with another book, they can hedge their bets in such a way that they will be guaranteed to make a profit. 
 
 The **Live Sports Odds API** is a free, open source API that tracks the current odds of essentially any given sporting event that is offered by books across the United States. With data from the API, the program is able to find all possible artbitrage opportunities across the eight nearest upcoming sporting events. Once the program finds these opportunities and makes the necessary calculations for the user to understand the output, it writes all findings to an Excel file for the user to access. This file includes the **ID** and **Sport Key** (both of which are specific metrics to the Live Sports Odds API), along with the **Expected Earnings, Bookmaker, Name, Odds**, and **Amount to Buy** with each book for each respective bet. Each row in the file represents one artbitrage opportunity.
